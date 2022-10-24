@@ -1,13 +1,34 @@
-class Cliente {
-    constructor(nombre, telefono,servicio) {
-        this.nombre = nombre;
-        this.telefono = telefono;
-        this.servicio  = servicio;
-    }
+
+function pedirNombre () {
+
+    const cliente = prompt("Ingresa tu nombre por favor");
    
-}
+    alert("hola "+ cliente + " porfavor ingresa el numero del servicio que te interesa");
+};
 
-const cliente1 = new Cliente(nombre = prompt("Cual es tu nombre"), telefono = prompt("Cual es tu telefono"), servicio = prompt("Que servicio es el que buscas?"));
+pedirNombre();
+ do{
+    var opcion = prompt("1. Corte de hombre  2. Recorte barba y bigote     3. Corte Mujer   4.Tinte");
+ }
+ while(opcion < 1 || opcion > 4);
 
-alert("Hola "+ cliente1.nombre + "  bienvenido tu telefono es el " + cliente1.telefono + " y el servicio que buscas es " + cliente1.servicio + " en un momento te atendemos gracias por la espera.");
+ switch(opcion)
+ {
+    case "1":
+        alert("El servicio de corte de pelo es de $200");
+        break;
+        case "2":
+            alert("El servicio de recorte barba y bigote es de $250");
+            break;
+            case "3":
+                alert("El servicio de corte de mujer esta en $300");
+                break;
+                case "4":
+                    alert("El servicio de tinte es de $800");
+                    break;
+ }
+
+
+
+
 
