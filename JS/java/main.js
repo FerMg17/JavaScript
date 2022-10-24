@@ -26,6 +26,9 @@ pedirNombre();
                 case "4":
                     alert("El servicio de tinte es de $800");
                     break;
+                    default:
+                        alert("ingresaste un servicio con el cual aun no contamos");
+                        break;
  }
 
 
