@@ -1,12 +1,14 @@
 
-function pedirNombre () {
+class Cliente{
+    constructor(nombre, apellido,numero){
+        this.nombre = nombre,
+        this.apellido = apellido,
+        this.numero = numero
+    }
+}
+    const cliente1 = new Cliente(nombre = prompt("Ingresa tu nombre por favor"),apellido = prompt("Ingresa tu apellido"), numero = prompt("Ingresa tu numero"))
+    alert("hola "+ cliente1.nombre + " "+ cliente1.apellido + " porfavor ingresa el numero del servicio que te interesa");
 
-    const cliente = prompt("Ingresa tu nombre por favor");
-   
-    alert("hola "+ cliente + " porfavor ingresa el numero del servicio que te interesa");
-};
-
-pedirNombre();
  do{
     var opcion = prompt("1. Corte de hombre  2. Recorte barba y bigote     3. Corte Mujer   4.Tinte");
  }
@@ -33,5 +35,7 @@ pedirNombre();
 
 
 
+var newArray = [];
+newArray.push(cliente1);
 
 
